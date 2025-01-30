@@ -1,12 +1,52 @@
 body {
-    background-color: rgb(255, 184, 91);
+    background-color: lightskyblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-a {
+#content {
+    max-width: 1400px;
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+nav, footer{
+    background-color: blueviolet;
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+nav a {
     padding: 15px;
-    color: black;
-    font-size: 15px;
+    color: blueviolet;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    margin: 10px;
+    text-align: center;
+}
+nav a:hover{
+    background-color: aliceblue;
+    color: blueviolet;
+}
+h1 {
+    text-align: center;
 }
 img {
-    width: 400px;
+    width: 800px;
+    /*text-align:center; */
+    display: block;
+    margin: 50px auto;
+}
+p {
+    padding: 0 30px;
+    line-height: 1.5cm;
+    width: 800px;
+    margin: 0 auto;
+}
+main-topic {
+    color: blueviolet;
+}
+footer {
+    margin-top: 50px;
+}
+footer a {
+    color: aliceblue;
 }
