@@ -22,6 +22,7 @@
 .icon {
     width: 80px;
     padding-top: 10px;
+    
 }
 
 #hero img {
@@ -78,19 +79,21 @@ nav a:hover {
 
 .home-title {
     font-family: "Playwrite AU SA", "Marker Felt", cursive, sans-serif;
-    font-size: 2em;
-    color: #111E58;
+    font-size: 5em;
+    color: white;
     margin-top: 10px;
 }
 
 h4 {
-    color: #111E58;
+    color: white;
+    -webkit-text-stroke: 1px black;
     font-family: "Cairo", "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 3em;
 }
 
 .book, .join {
-    background-color: #111E58;
-    color: white;
+    background-color: white;
+    color: #111E58;
     text-decoration: none;
     font-family: "Cairo", "Arial", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
@@ -164,7 +167,6 @@ main section img {
 #hero-box {
     grid-column: 1/7;
     grid-row: 1/5;
-    z-index: 0;
 }
 
 #hero-img {
@@ -179,6 +181,7 @@ main section img {
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+    
 }
 
 .button-box {
@@ -281,7 +284,7 @@ h2 {
     }
     .home-title {
         font-size: 25px;
-        color: #111E58;
+        color: white;
     }
     main section { 
         margin: 50px auto;
