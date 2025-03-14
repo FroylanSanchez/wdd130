@@ -8,12 +8,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #F4F4F4;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 nav {
     background-color: #312f2f;
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 0 0 10px 10px;
     width: 100%;
 }
@@ -21,13 +21,13 @@ nav {
 .nav-container {
     display: flex;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .nav-icon img {
-    height: 100px;
+    height: 80px;
     border-radius: 10px;
     margin-right: auto;
 }
@@ -35,15 +35,15 @@ nav {
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex-grow: 1;
 }
 
 .nav-links a {
     color: #EF626C;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 20px;
+    font-size: 1em;
+    padding: 8px 16px;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
 }
@@ -60,22 +60,22 @@ nav {
 
 header {
     background: #f4f4f4;
-    padding: 60px 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding: 40px 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
-    gap: 40px;
+    gap: 30px;
 }
 
 .hero-image {
-    width: 55%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
@@ -90,26 +90,26 @@ header {
 
 .hero-text h1 {
     margin: 0;
-    font-size: 2.8em;
+    font-size: 2.2em;
     color: #EF626C;
     font-family: "Share Tech Mono", monospace;
 }
 
 .hero-text p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #312f2f;
     font-family: "Roboto", Arial, sans-serif;
 }
 
 .hero-button {
     background-color: #EF626C;
-    padding: 15px 30px;
+    padding: 12px 24px;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 0.95em;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: background-color 0.3s, transform 0.3s;
     font-family: "Roboto", Arial, sans-serif;
     align-self: center;
@@ -122,23 +122,23 @@ header {
 
 .additional-text {
     text-align: center;
-    max-width: 1400px;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 30px auto;
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: #312f2f;
     font-family: "Roboto", Arial, sans-serif;
 }
 
 main {
-    padding: 80px 20px;
+    padding: 60px 20px;
     margin: 0 auto;
     flex: 1;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .text-box {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     position: relative;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ main {
 .text-box-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
     position: relative;
 }
@@ -159,7 +159,7 @@ main {
 
 .text-box-content {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
     position: relative;
@@ -169,18 +169,18 @@ main {
 .text-box-content h2 {
     font-family: "Share Tech Mono", monospace;
     color: #EF626C;
-    font-size: 2.2em;
+    font-size: 1.8em;
 }
 
 .text-box-content p {
     font-family: "Roboto", Arial, sans-serif;
     color: #312f2f;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .text-box-image {
-    width: 55%;
-    height: 300px;
+    width: 50%;
+    height: 250px;
     object-fit: cover;
     border-radius: 15px;
     position: absolute;
@@ -188,8 +188,8 @@ main {
 }
 
 .text-box-image.first {
-    width: 50%;
-    height: 300px;
+    width: 45%;
+    height: 250px;
     object-fit: cover;
     border-radius: 15px;
     position: absolute;
@@ -206,8 +206,8 @@ footer {
     background-color: #312f2f;
     color: #F6E8EA;
     text-align: center;
-    padding: 60px 20px;
-    margin-top: 80px;
+    padding: 40px 20px;
+    margin-top: 60px;
     border-radius: 10px 10px 0 0;
 }
 
@@ -215,7 +215,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -223,7 +223,7 @@ footer {
 .footer-content p {
     margin: 0 10px;
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .footer-content a {
@@ -232,7 +232,7 @@ footer {
     transition: color 0.3s;
     border-radius: 5px;
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .footer-content a:hover {
@@ -246,7 +246,7 @@ footer {
 
 .social-icons a {
     color: #F6E8EA;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-decoration: none;
     transition: color 0.3s;
     border-radius: 50%;
