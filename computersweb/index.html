@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpecCheck</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -21,45 +22,51 @@
             </div>
         </div>
     </nav>
-    <header>
-        <div class="hero">
-            <img src="images/home_1.jpg" alt="Hero Image" class="hero-image">
-            <div class="hero-text">
-                <h1>SpecCheck – Smart Comparisons for Powerful Builds.</h1>
-                <p>
-                    At SpecCheck, we’re committed to helping you make the best decisions for building your ideal computer.
-                    Whether you need a setup for gaming or work, our goal is to ensure you get the best performance for your budget.
-                </p>
-                <button class="hero-button">Start Now</button>
-            </div>
-        </div>
-        <div class="additional-text">
-            <p>Building the perfect PC can be overwhelming, but SpecCheck makes it easier. With expert comparisons of GPUs from NVIDIA,
-            AMD and Intel, plus CPUs from Intel and AMD, so you can make an informed decision picking your components.</p>
-        </div>
-    </header>
-    <main>
-        <section class="text-box">
-            <div class="text-box-content">
-                <h2>Do you want to learn how to assemble your PC yourself?</h2>
-                <p>Click here to check out some tutorials!</p>
-            </div>
-            <img src="images/home_2.jpg" alt="Image 1" class="text-box-image left-image">
-        </section>
 
-        <!-- Transparent Spacer -->
-        <div class="spacer"></div>
-
-        <section class="text-box">
-            <div class="text-box-content">
-                <h2>How can I improve my working environment?</h2>
-                <p>Click here to find some ideas for your setup!</p>
+    <div id="content">
+        <header>
+            <div class="hero">
+                <img src="images/home_1.jpg" alt="Hero Image" class="hero-image">
+                <div class="hero-text">
+                    <h1>SpecCheck – Smart Comparisons for Powerful Builds.</h1>
+                    <p>
+                        At SpecCheck, we’re committed to helping you make the best decisions for building your ideal computer.
+                        Whether you need a setup for gaming or work, our goal is to ensure you get the best performance for your budget.
+                    </p>
+                    <button class="hero-button">Start Now</button>
+                </div>
             </div>
-            <img src="images/home_3.jpg" alt="Image 2" class="text-box-image right-image">
-        </section>
-    </main>
+            <div class="additional-text">
+                <p>Building the perfect PC can be overwhelming, but SpecCheck makes it easier. With expert comparisons of GPUs from NVIDIA,
+                AMD and Intel, plus CPUs from Intel and AMD, so you can make an informed decision picking your components.</p>
+            </div>
+        </header>
 
-    <!-- Footer -->
+        <main>
+            <section class="text-box">
+                <div class="text-box-grid">
+                    <div class="text-box-content">
+                        <h2>Do you want to learn how to assemble your PC yourself?</h2>
+                        <p>Click here to check out some tutorials!</p>
+                    </div>
+                    <img src="images/home_2.jpg" alt="Image 1" class="text-box-image first">
+                </div>
+            </section>
+
+            <div class="spacer"></div>
+
+            <section class="text-box">
+                <div class="text-box-grid reverse">
+                    <div class="text-box-content">
+                        <h2>?How can I improve my working environment</h2>
+                        <p>!Click here to find some ideas for your setup</p>
+                    </div>
+                    <img src="images/home_3.jpg" alt="Image 2" class="text-box-image second">
+                </div>
+            </section>
+        </main>
+    </div>
+
     <footer>
         <div class="footer-content">
             <p>© 2025 SpecCheck - Froylan Sanchez</p>

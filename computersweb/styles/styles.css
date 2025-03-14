@@ -7,39 +7,42 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #F4F4F4;
+    font-size: 1.1em;
 }
 
 nav {
-    background-color: #312f2f; 
-    padding: 20px 40px;
-    border-radius: 0 0 10px 10px; 
+    background-color: #312f2f;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .nav-icon img {
-    height: 100px; 
-    border-radius: 10px; 
+    height: 100px;
+    border-radius: 10px;
+    margin-right: auto;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
     flex-grow: 1;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .nav-links a {
-    color: #EF626C; 
+    color: #EF626C;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 10px 20px;
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
@@ -50,25 +53,31 @@ nav {
     background-color: #EF626C;
 }
 
+#content {
+    flex: 1;
+    width: 100%;
+}
+
 header {
     background: #f4f4f4;
     padding: 60px 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     gap: 40px;
 }
 
 .hero-image {
-    width: 55%; 
+    width: 55%;
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .hero-text {
@@ -81,118 +90,132 @@ header {
 
 .hero-text h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: #EF626C;
     font-family: "Share Tech Mono", monospace;
 }
 
 .hero-text p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #312f2f;
     font-family: "Roboto", Arial, sans-serif;
 }
 
 .hero-button {
-    background-color: #EF626C; 
-    color: white;
+    background-color: #EF626C;
     padding: 15px 30px;
+    color: white;
     border: none;
-    border-radius: 5px; 
-    font-size: 1em;
+    border-radius: 5px;
+    font-size: 1.1em;
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s, transform 0.3s;
-    font-family: "Roboto", Arial, sans-serif; 
+    font-family: "Roboto", Arial, sans-serif;
     align-self: center;
 }
 
 .hero-button:hover {
-    background-color: #22181C; 
-    transform: scale(1.05); 
+    background-color: #22181C;
+    transform: scale(1.05);
 }
 
 .additional-text {
     text-align: center;
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1400px;
+    margin: 40px auto;
     padding: 10px;
-    font-size: 1.2em;
-    color: #312f2f; 
+    font-size: 1.3em;
+    color: #312f2f;
     font-family: "Roboto", Arial, sans-serif;
 }
 
 main {
-    padding: 60px 20px; 
-    margin: 40px 0; 
+    padding: 80px 20px;
+    margin: 0 auto;
     flex: 1;
+    max-width: 1400px;
 }
 
 .text-box {
+    margin-bottom: 80px;
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.text-box-grid.reverse {
+    direction: rtl;
 }
 
 .text-box-content {
-    position: relative;
-    z-index: 2;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 15px;
-    width: 60%; 
-    margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
 
 .text-box-content h2 {
-    font-family: "Share Tech Mono", monospace; 
-    color: #EF626C; 
+    font-family: "Share Tech Mono", monospace;
+    color: #EF626C;
+    font-size: 2.2em;
 }
 
 .text-box-content p {
-    font-family: "Roboto", Arial, sans-serif; 
-    color: #312f2f; 
+    font-family: "Roboto", Arial, sans-serif;
+    color: #312f2f;
+    font-size: 1.2em;
 }
 
 .text-box-image {
-    position: absolute;
-    width: 50%; 
-    height: 110%;
+    width: 55%;
+    height: 300px;
     object-fit: cover;
-    z-index: 1;
-    top: -15%;
     border-radius: 15px;
+    position: absolute;
+    transition: transform 0.3s;
 }
 
-.left-image {
-    left: -10%;
+.text-box-image.first {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-20%, -15%);
 }
 
-.right-image {
-    right: -10%;
-}
-
-.spacer {
-    height: 80px;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
+.text-box-image.second {
+    z-index: 1;
+    transform: translate(30%, -15%);
 }
 
 footer {
     background-color: #312f2f;
-    color: #F6E8EA; 
+    color: #F6E8EA;
     text-align: center;
-    padding: 40px 20px; 
-    margin-top: 40px; 
-    border-radius: 10px 10px 0 0; 
+    padding: 60px 20px;
+    margin-top: 80px;
+    border-radius: 10px 10px 0 0;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -200,18 +223,20 @@ footer {
 .footer-content p {
     margin: 0 10px;
     font-family: "Roboto", Arial, sans-serif;
+    font-size: 1.1em;
 }
 
 .footer-content a {
     color: #F6E8EA;
     text-decoration: none;
     transition: color 0.3s;
-    border-radius: 5px; 
-    font-family: "Roboto", Arial, sans-serif; 
+    border-radius: 5px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1.1em;
 }
 
 .footer-content a:hover {
-    color: #EF626C; 
+    color: #EF626C;
 }
 
 .social-icons {
@@ -220,14 +245,14 @@ footer {
 }
 
 .social-icons a {
-    color: #F6E8EA; 
-    font-size: 1.5em;
+    color: #F6E8EA;
+    font-size: 1.6em;
     text-decoration: none;
     transition: color 0.3s;
-    border-radius: 50%; 
-    font-family: "Roboto", Arial, sans-serif; 
+    border-radius: 50%;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
 .social-icons a:hover {
-    color: #EF626C; 
+    color: #EF626C;
 }
