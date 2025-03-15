@@ -1,0 +1,247 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F4F4F4;
+    font-size: 1em;
+}
+
+nav {
+    background-color: #312f2f;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-icon img {
+    height: 80px;
+    border-radius: 10px;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    color: #EF626C;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #F6E8EA;
+    background-color: #EF626C;
+}
+
+#content {
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+header {
+    background: #F4F4F4;
+    padding: 40px 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #EF626C;
+    font-family: "Share Tech Mono", monospace;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #312f2f;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: #EF626C;
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #22181C;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+    padding: 60px 20px;
+    margin: 0 auto;
+    flex: 1;
+    max-width: 1400px;
+}
+
+.text-box {
+    margin-bottom: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.text-box-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    position: relative;
+    z-index: 3;
+}
+
+.text-box-content h2 {
+    font-family: "Share Tech Mono", monospace;
+    color: #EF626C;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.text-box-content p {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #312f2f;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.text-box-content button {
+    background-color: #EF626C;
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.text-box-content button:hover {
+    background-color: #22181C;
+    transform: scale(1.05);
+}
+
+.text-box-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #312f2f;
+    color: #F6E8EA;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 0 10px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1em;
+}
+
+.footer-content a {
+    color: #F6E8EA;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 5px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1em;
+}
+
+.footer-content a:hover {
+    color: #EF626C;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #F6E8EA;
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 50%;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.social-icons a:hover {
+    color: #EF626C;
+}
