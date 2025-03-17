@@ -61,7 +61,6 @@ nav {
     padding: 0 20px;
 }
 
-/* Hero Section */
 header {
     background: #F4F4F4;
     padding: 40px 20px;
@@ -120,7 +119,6 @@ header {
     transform: scale(1.05);
 }
 
-/* Main Content */
 main {
     padding: 60px 20px;
     margin: 0 auto;
@@ -190,7 +188,6 @@ main {
     border-radius: 15px;
 }
 
-/* Footer */
 footer {
     background-color: #312f2f;
     color: #F6E8EA;
