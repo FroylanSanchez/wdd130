@@ -53,6 +53,43 @@ nav {
     background-color: #EF626C;
 }
 
+.login-container {
+    float: right;
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.login-container form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+    background-color: #F6E8EA;
+    color: #312f2f;
+}
+
+.login-container button {
+    background-color: #EF626C;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #22181C;
+}
+
 #content {
     flex: 1;
     width: 100%;
@@ -61,7 +98,6 @@ nav {
     padding: 0 20px;
 }
 
-/* Hero Section */
 header {
     background: #F4F4F4;
     padding: 40px 20px;
@@ -104,7 +140,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* Blog Section */
 .blog-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -209,4 +244,47 @@ footer {
 
 .social-icons a:hover {
     color: #EF626C;
+}
+
+@media screen and (max-width: 900px) {
+    .login-container {
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .login-container form {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        margin: 10px 0;
+    }
+    
+    .login-container {
+        order: 3;
+        width: 100%;
+    }
+    
+    .login-container form {
+        justify-content: center;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        max-width: 200px;
+    }
 }
