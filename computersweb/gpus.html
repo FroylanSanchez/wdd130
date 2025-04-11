@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPUs</title>
     <link rel="stylesheet" href="styles/gpus-styles.css">
@@ -12,17 +11,19 @@
     <nav>
         <div class="nav-container">
             <div class="nav-icon">
-                <img src="images/computerslogo.png" alt="Website Logo">
+                <img src="images/computerslogo.png" alt="SpecCheck Logo">
             </div>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="cpus.html">CPUs</a>
-                <a href="gpus.html" class="active">GPUs</a>
+                <a href="gpus.html">GPUs</a>
             </div>
             <div class="login-container">
-                <form action="/action_page.php" method="post">
-                    <input type="text" placeholder="Username" name="username" required>
-                    <input type="password" placeholder="Password" name="psw" required>
+                <form action="https://example.com/login" method="post">
+                    <label for="username" class="visually-hidden">Username</label>
+                    <input type="text" id="username" placeholder="Username" name="username" required>
+                    <label for="password" class="visually-hidden">Password</label>
+                    <input type="password" id="password" placeholder="Password" name="password" required>
                     <button type="submit">Login</button>
                 </form>
             </div>
@@ -33,43 +34,35 @@
         <header>
             <div class="hero">
                 <h1>Choosing the Right GPU for Your Build</h1>
-                <img src="images/gpu_4.jpg" alt="Hero Image" class="hero-image">
+                <img src="images/gpu_4.jpg" alt="Graphics cards comparison" class="hero-image">
                 <div class="hero-text">
-                    <p>
-                        Choosing the right GPU is essential for gaming, creative work, and overall system performance.
-                        With options from NVIDIA, AMD, and Intel, it's important to consider factors like VRAM, clock speeds,
-                        and ray tracing capabilities. Whether you're aiming for high frame rates in the latest games or smooth
-                        performance in professional applications, understanding the strengths of each brand and model will help
-                        you find the best fit for your build.
-                    </p>
+                    <p>Choosing the right GPU is essential for gaming, creative work, and overall system performance. With options from NVIDIA, AMD, and Intel, it's important to consider factors like VRAM, clock speeds, and ray tracing capabilities.</p>
+                    <button type="button" class="hero-button">Learn More</button>
                 </div>
             </div>
         </header>
+
         <main>
-            <section class="blog-section">
-                <div class="blog-post">
-                    <img src="images/gpu_1.jpg" alt="Category Image" class="category-image">
-                    <h3>NVIDIA</h3>
-                    <p>NVIDIA's GPUs are known for their cutting-edge technology, including advanced ray tracing and AI-powered features like DLSS.
-                        They offer top-tier performance for gaming, creative work, and AI applications, making them a favorite among enthusiasts
-                        and professionals.</p>
-                    <a href="#" class="read-more">Read more</a>
+            <section class="gpu-grid">
+                <div class="gpu-card">
+                    <img src="images/gpu_1.jpg" alt="NVIDIA GPU" class="gpu-image">
+                    <h2>NVIDIA</h2>
+                    <p>NVIDIA's GPUs are known for their cutting-edge technology, including advanced ray tracing and AI-powered features like DLSS. They offer top-tier performance for gaming and creative work.</p>
+                    <a href="#" class="gpu-link">View Options</a>
                 </div>
 
-                <div class="blog-post">
-                    <img src="images/gpu_2.jpg" alt="Category Image" class="category-image">
-                    <h3>AMD</h3>
-                    <p>AMD's Radeon GPUs provide strong performance at competitive prices, often featuring more VRAM for the cost. With technologies
-                    like FSR and Smart Access Memory, AMD cards deliver excellent value and seamless integration with Ryzen CPUs.</p>
-                    <a href="#" class="read-more">Read more</a>
+                <div class="gpu-card">
+                    <img src="images/gpu_2.jpg" alt="AMD GPU" class="gpu-image">
+                    <h2>AMD</h2>
+                    <p>AMD's Radeon GPUs provide strong performance at competitive prices, often featuring more VRAM for the cost. With technologies like FSR, they deliver excellent value.</p>
+                    <a href="#" class="gpu-link">View Options</a>
                 </div>
 
-                <div class="blog-post">
-                    <img src="images/gpu_3.jpg" alt="Category Image" class="category-image">
-                    <h3>INTEL</h3>
-                    <p>Intel is the newest player in the GPU space, offering solid performance with competitive pricing. With AI-enhanced upscaling
-                    and strong support for modern gaming features, Intel Arc is an exciting option for budget-conscious builders and emerging tech enthusiasts.</p>
-                    <a href="#" class="read-more">Read more</a>
+                <div class="gpu-card">
+                    <img src="images/gpu_3.jpg" alt="Intel GPU" class="gpu-image">
+                    <h2>INTEL</h2>
+                    <p>Intel is the newest player in the GPU space, offering solid performance with competitive pricing. Intel Arc is an exciting option for budget-conscious builders.</p>
+                    <a href="#" class="gpu-link">View Options</a>
                 </div>
             </section>
         </main>
@@ -77,13 +70,13 @@
 
     <footer>
         <div class="footer-content">
-            <p>© 2025 New Website - Froylan Sanchez</p>
-            <p><a href="#">Private Policy</a></p>
-            <p><a href="#">Terms of Service</a></p>
+            <p>© 2025 SpecCheck - Froylan Sanchez</p>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p><a href="terms.html">Terms of Service</a></p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>

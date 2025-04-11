@@ -11,6 +11,18 @@ body {
     font-size: 1em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 nav {
     background-color: #312f2f;
     padding: 15px 0;
@@ -140,55 +152,74 @@ header {
     margin-bottom: 30px;
 }
 
-.blog-section {
+.hero-button {
+    background-color: #EF626C;
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #22181C;
+    transform: scale(1.05);
+}
+
+.gpu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     padding: 40px 20px;
 }
 
-.blog-post {
+.gpu-card {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
-    text-align: left;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.blog-post .category-image {
+.gpu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gpu-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.blog-post .category {
-    font-size: 0.9em;
+.gpu-card h2 {
+    font-size: 1.8em;
     color: #EF626C;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-family: "Share Tech Mono", monospace;
+    margin-bottom: 15px;
 }
 
-.blog-post h3 {
-    font-size: 1.5em;
-    color: #312f2f;
-    margin: 10px 0;
-}
-
-.blog-post p {
+.gpu-card p {
     font-size: 1em;
     color: #312f2f;
     margin-bottom: 20px;
 }
 
-.blog-post .read-more {
-    color: #EF626C;
+.gpu-link {
+    display: inline-block;
+    background-color: #EF626C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    transition: background-color 0.3s;
 }
 
-.blog-post .read-more:hover {
-    color: #22181C;
+.gpu-link:hover {
+    background-color: #22181C;
 }
 
 footer {
@@ -211,17 +242,12 @@ footer {
 
 .footer-content p {
     margin: 0 10px;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 1em;
 }
 
 .footer-content a {
     color: #F6E8EA;
     text-decoration: none;
     transition: color 0.3s;
-    border-radius: 5px;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 1em;
 }
 
 .footer-content a:hover {
@@ -236,10 +262,7 @@ footer {
 .social-icons a {
     color: #F6E8EA;
     font-size: 1.4em;
-    text-decoration: none;
     transition: color 0.3s;
-    border-radius: 50%;
-    font-family: "Roboto", Arial, sans-serif;
 }
 
 .social-icons a:hover {

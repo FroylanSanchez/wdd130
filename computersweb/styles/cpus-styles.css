@@ -11,6 +11,18 @@ body {
     font-size: 1em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 nav {
     background-color: #312f2f;
     padding: 15px 0;
@@ -165,10 +177,6 @@ main {
 
 .text-box {
     margin-bottom: 60px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .text-box-grid {
@@ -176,16 +184,15 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: center;
-    position: relative;
 }
 
 .text-box-content {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     text-align: left;
-    position: relative;
-    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 2;
 }
 
 .text-box-content h2 {
@@ -196,26 +203,9 @@ main {
 }
 
 .text-box-content p {
-    font-family: "Roboto", Arial, sans-serif;
     color: #312f2f;
     font-size: 1em;
     margin-bottom: 20px;
-}
-
-.text-box-content button {
-    background-color: #EF626C;
-    padding: 12px 24px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.text-box-content button:hover {
-    background-color: #22181C;
-    transform: scale(1.05);
 }
 
 .text-box-image {
@@ -223,6 +213,7 @@ main {
     max-width: 600px;
     height: auto;
     border-radius: 15px;
+    z-index: 1;
 }
 
 footer {
@@ -245,17 +236,12 @@ footer {
 
 .footer-content p {
     margin: 0 10px;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 1em;
 }
 
 .footer-content a {
     color: #F6E8EA;
     text-decoration: none;
     transition: color 0.3s;
-    border-radius: 5px;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 1em;
 }
 
 .footer-content a:hover {
@@ -270,10 +256,7 @@ footer {
 .social-icons a {
     color: #F6E8EA;
     font-size: 1.4em;
-    text-decoration: none;
     transition: color 0.3s;
-    border-radius: 50%;
-    font-family: "Roboto", Arial, sans-serif;
 }
 
 .social-icons a:hover {
@@ -295,6 +278,10 @@ footer {
     .login-container input[type="text"],
     .login-container input[type="password"] {
         width: 120px;
+    }
+
+    .text-box-grid {
+        grid-template-columns: 1fr;
     }
 }
 
